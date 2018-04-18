@@ -1,0 +1,15 @@
+/* DECLARE THE KEYFRAME */
+@-webkit-keyframes bgcolorChange {
+
+	from {
+		background-color: green;
+	}
+	to {
+		background-color: blue;
+	}
+
+}
+/* USE THE KEYFRAME THROUGH KEY_NAME */
+p {
+	-webkit-animation: bgcolorChange 3s;
+}
