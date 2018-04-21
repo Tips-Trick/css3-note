@@ -1,0 +1,127 @@
+<div class="project">
+                            <img src='https://images.unsplash.com/photo-1519267904000-02876f68b570?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=916560ebb3ff1d02f366dd8a625979d0' alt='' class="image">
+                            <div class="project__middle">
+                                <div class="text-middle">
+                                    <a href="#" target="_blank">thegioithethao.com</a>
+                                </div>
+                            </div>
+                            <div class="project__overlay">
+                                <ul class="text-overlay" >
+                                    <li><a href="#" target="_blank">Details</a></li>
+                                    <li><a href="#" target="_blank">Live View</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        .layout {
+	text-align: center;
+}
+
+.project {
+  position: relative;
+  width: 98%;
+  margin: 17px 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #262829a8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .4s ease;
+  font-size: 15px;
+}
+
+.project:hover .project__overlay {
+  height: 30%;
+}
+
+.project__middle {
+	width: 100%;
+  	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%)
+}
+
+.project:hover .project__middle {
+  	opacity: 1;
+}
+
+.text-middle li a{
+	white-space: nowrap; 
+	color: white;
+	font-size: 17px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.text-middle {
+	font-size: 24px;
+  text-shadow: 5px 2px 15px black;
+}
+
+.project li {
+  list-style-type: none;
+  padding: 8px 30px;
+  border-top: 1px solid #d2d5e4;
+}
+
+.project li:not(:first-child) {
+  border-left: 1px solid #d2d5e4;
+}
+
+.project li:not(:last-child) {
+  border-right: 1px solid #d2d5e4;
+}
+
+.project a{
+	color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.layout__name {
+	font-weight: bold;
+}
+
+.layout__tags {
+	margin-bottom: 40px;
+}
+
+.layout__tags a {
+	color: #000;
+  	text-decoration: none;
+	font-size: 14px;
+	height: auto;
+	line-height: 30px;
+}
+
+.layout__tags a::after {
+	content: ', ';
+}
+
+.layout__tags a:hover {
+	color: #09d594;
+}
