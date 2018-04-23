@@ -1,0 +1,83 @@
+<div class="newest-post">
+    <a href="https://mail.google.com/mail" target="_blank">
+           <img class="newest-post__img" src='https://images.unsplash.com/photo-1458056185371-05b147514907?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=01779739345ffed689e33e41fd1d8508' alt=''>
+                    <div class="newest-post__overlay"></div>
+                    <p class="newest-post__category">
+                      <a href="https://tracau.vn" target="_blank">Videos</a></p>
+                    <h3 class="newest-post__title">Warmoscar armosc arm osc v osc v</h3>
+                    <p class="newest-post__info">
+                      <strong class="newest-post__author">Mark<strong>
+                        x 
+                      <span class="newest-post__time">April 30, 2018</p>
+                        </a>
+                </div>
+
+
+
+
+.newest-post{
+  width: 450px;
+  height: 320px;
+  overflow: hidden;
+  position: relative; /*anchor point for newest post*/
+  cursor: pointer;
+  margin: 50px;
+  float: left;
+  text-transform: uppercase;
+}
+.newest-post__overlay{
+  width: 450px;
+  height: 320px;
+  background-color: rgba(0,0,0,0.50);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  transition: 0.4s;
+}
+.newest-post__category a{
+  font-size: 10px;
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  z-index: 4;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3px 7px;
+  transition: 0.5s;
+}
+.newest-post__title{
+  width: 90%;
+  font-size: 25px;
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  z-index: 4;
+  text-decoration: none;
+  color: white;
+}
+.newest-post__info{
+  width: 70%;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: 87%;
+  left: 5%;
+  z-index: 5;
+  text-decoration: none;
+  font-weight: 100;
+}
+.newest-post__img{
+  width: 450px;
+  height: 320px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.newest-post:hover .newest-post__img { transform: scale(1.5);;
+}
+.newest-post:hover .newest-post__category a{
+  background-color: rgb(255, 53, 48);
+}
+
+
