@@ -82,9 +82,11 @@
 }
 
 .project li {
-  list-style-type: none;
-  padding: 8px 30px;
-  border-top: 1px solid #d2d5e4;
+    list-style-type: none;
+    padding: 8px 30px;
+    border-top: 1px solid #d2d5e4;
+    width: 50%;
+    float: left;
 }
 
 .project li:not(:first-child) {
